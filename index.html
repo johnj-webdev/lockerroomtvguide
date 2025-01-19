@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locker Room TV Guide</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Graduate&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Font Awesom Link -->
+    <script src="https://kit.fontawesome.com/60cb1f39ab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation">
+            <div class="navbar-container">
+                <a href="/" id="navbar-logo">Locker Room TV Guide</a>
+                <ul class="navbar-menu">
+                    <li class="navbar-item">
+                        <a href="./index.html" class="navbar-link active">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./channels.html" class="navbar-link">Channels</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./athletes.html" class="navbar-link">Athletes</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./stuff.html" class="navbar-link">Stuff</a>
+                    </li>
+                </ul>
+
+                <button
+                    class="navbar-toggle"
+                    id="mobile-menu"
+                    aria-expanded="false"    
+                >
+                    <i id="bars" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <div class="main-container">
+                <div class="main-content">
+                    <h1 class="main-heading text-xl" >YouTube Schedule: Never Miss a Live Show!</h1>
+                    <p>Welcome to the <span style="font-weight: bold;">one-stop shop</span> for all the best live CrossFit media on YouTube.
+                        </br>
+                        Featuring a variety of competitions, podcasts, talking heads and CrossFit media channels in the space.
+                    </p>
+                </div>
+                <div class="live-table-container">
+                    <table id="live-table" class="table-content">
+                        <colgroup>
+                            <col class="channel-column">
+                            <col>
+                            <col>
+                            <col span="2" class="thumbnail-column">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">CHANNEL</th>
+                                <th scope="col"></th>
+                                <th scope="col">VIDEO</th>
+                                <th scope="col"></th>
+                                <th scope="col">DAY</th>
+                                <th scope="col">PACIFIC</th>
+                                <th scope="col">CENTRAL</th>
+                                <th scope="col">EASTERN</th>
+                                <th scope="col">UK</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Results will be inserted here-->
+                            <!-- <tr>
+                                <td data-label="Channel"><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="">Coffee, Pods & Wods</td>
+                                <td data-label="Video">Featuring a variety of competitions, podcasts, talking heads and
+                                    CrossFit media channels in the space</td>
+                                <td data-label=""><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="Day">Monday</td>
+                                <td data-label="UK">16:00 24/12/2024</td>
+                                <td data-label="Pacific">07:00 12/24/2024</td>
+                                <td data-label="Central">09:00 12/24/2024</td>
+                                <td data-label="Eastern">10:00 12/24/2024</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Channel"><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="">Coffee, Pods & Wods</td>
+                                <td data-label="Video">Featuring a variety of competitions, podcasts, talking heads and
+                                    CrossFit media channels in the space</td>
+                                <td data-label=""><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="Day">Monday</td>
+                                <td data-label="UK">16:00 24/12/2024</td>
+                                <td data-label="Pacific">07:00 12/24/2024</td>
+                                <td data-label="Central">09:00 12/24/2024</td>
+                                <td data-label="Eastern">10:00 12/24/2024</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Channel"><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="">Coffee, Pods & Wods</td>
+                                <td data-label="Video">Featuring a variety of competitions, podcasts, talking heads and
+                                    CrossFit media channels in the space</td>
+                                <td data-label=""><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="Day">Monday</td>
+                                <td data-label="UK">16:00 24/12/2024</td>
+                                <td data-label="Pacific">07:00 12/24/2024</td>
+                                <td data-label="Central">09:00 12/24/2024</td>
+                                <td data-label="Eastern">10:00 12/24/2024</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Channel"><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="">Coffee, Pods & Wods</td>
+                                <td data-label="Video">Featuring a variety of competitions, podcasts, talking heads and
+                                    CrossFit media channels in the space</td>
+                                <td data-label=""><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="Day">Monday</td>
+                                <td data-label="UK">16:00 24/12/2024</td>
+                                <td data-label="Pacific">07:00 12/24/2024</td>
+                                <td data-label="Central">09:00 12/24/2024</td>
+                                <td data-label="Eastern">10:00 12/24/2024</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Channel"><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="">Coffee, Pods & Wods</td>
+                                <td data-label="Video">Featuring a variety of competitions, podcasts, talking heads and
+                                    CrossFit media channels in the space</td>
+                                <td data-label=""><img src="./images/android-chrome-192x192.png" alt=""></td>
+                                <td data-label="Day">Monday</td>
+                                <td data-label="UK">16:00 24/12/2024</td>
+                                <td data-label="Pacific">07:00 12/24/2024</td>
+                                <td data-label="Central">09:00 12/24/2024</td>
+                                <td data-label="Eastern">10:00 12/24/2024</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="./js/mainmenu.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
