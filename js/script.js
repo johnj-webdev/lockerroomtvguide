@@ -92,8 +92,8 @@ async function fetchYouTubeData() {
 
   allResults.sort(
     (a, b) =>
-      new Date(a[5].replace("<br>", " ")) - new Date(b[5].replace("<br>", " "))
-  ); // Assuming dateGMT is at index 5
+      new Date(a[9].replace("<br>", " ")) - new Date(b[9].replace("<br>", " "))
+  ); // Assuming dateGMT is at index 9
 
   const tableBody = document
     .getElementById("live-table")
