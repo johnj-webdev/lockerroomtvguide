@@ -19,18 +19,18 @@ async function fetchYouTubeData() {
 
   for (const channelId of channelIds) {
     const searchResponse = await fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet,id&channelId=${channelId}&maxResults=50&type=video&eventType=upcoming&key=AIzaSyApcnG5I9UW-suCvn7iYa3Bakp7NV6vghw`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet,id&channelId=${channelId}&maxResults=50&type=video&eventType=upcoming&key=x`
     );
     const searchData = await searchResponse.json();
 
     for (const item of searchData.items) {
       const videoResponse = await fetch(
-        `https://www.googleapis.com/youtube/v3/videos?part=liveStreamingDetails,snippet&id=${item.id.videoId}&key=AIzaSyApcnG5I9UW-suCvn7iYa3Bakp7NV6vghw`
+        `https://www.googleapis.com/youtube/v3/videos?part=liveStreamingDetails,snippet&id=${item.id.videoId}&key=x`
       );
       const videoData = await videoResponse.json();
 
       const channelResponse = await fetch(
-        `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelId}&key=AIzaSyApcnG5I9UW-suCvn7iYa3Bakp7NV6vghw`
+        `https://www.googleapis.com/youtube/v3/channels?part=snippet&id=${channelId}&key=x`
       );
       const channelData = await channelResponse.json();
 
